@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Team Unwired</title>
     <link rel="shortcut icon" href="assets/Teamunwired.png" />
-    <script
-      src="https://kit.fontawesome.com/2a7b3ceecc.js"
-      crossorigin="anonymous"
-    ></script>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,33 +15,91 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <script
+      src="https://kit.fontawesome.com/2a7b3ceecc.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <!-- Spline Viewer -->
+    <script
       type="module"
       src="https://unpkg.com/@splinetool/viewer@1.10.51/build/spline-viewer.js"
     ></script>
   </head>
   <body>
-    <!-- Header (Nav Bar) -->
     <nav class="navbar">
-      <img class="logo" src="assets/Teamunwired.png" alt="Team Unwired Logo" />
+      <img
+        class="logo"
+        src="assets/Teamunwired.png"
+        onclick="navigate(index)"
+        alt="Team Unwired Logo"
+      />
       <ul class="menu">
         <li class="nav-btn">Home</li>
         <li class="nav-btn">About</li>
         <li class="nav-btn">Projects</li>
         <li class="nav-btn">Sponsors</li>
-        <li class="nav-btn">Contact</li>
       </ul>
-      <button>Explore Our Journey</button>
+      <button class="navbar-cta">Contact Us</button>
     </nav>
 
-    <!-- Hero Section -->
+    <!--Hero Section-->
     <section class="hero-section">
-      <h1>Pioneering Electric Mobility at NIT Calicut</h1>
-      <p>
-        Team Unwired – Driving Innovation in Formula Student Electric and Hybrid
-        Racing
-      </p>
-      <div>
-        <button>Explore Our Journey</button>
+      <spline-viewer
+        url="https://prod.spline.design/As6rW4-8RJRnt2NP/scene.splinecode"
+        class="background"
+        loading-anim-type="spinner-big-dark"
+        mouse-controls
+        touch-action="pan-y"
+      ></spline-viewer>
+      <div class="hero-content">
+        <h1>We Ensure Innovation for a better world</h1>
+        <p>
+          The next level of Innovation starts here, At team unwired minds meet
+          and innovation begins. <span class="text-red">#StayUnwired</span>
+        </p>
+        <div>
+          <button class="hero-section-cta">Contact Us</button>
+        </div>
+      </div>
+    </section>
+
+    <!--Project Showcase-->
+    <section class="project-showcase">
+      <div class="project-grid">
+        <div class="project-card">
+          <h2>SUPRA SAE</h2>
+          <p>
+            For all the gear heads out there, for all the ones who wish to feel
+            the rush in their face, then Supra SAE is for you. We at Team
+            Unwired do this day in and day out. With passion and dedication we
+            have conquered the tarmac. But that doesn't stop us from pushing
+            ourselves, bending limits and stretching innovation we
+            <span class="hashtag">#StayUnwired</span>.
+          </p>
+        </div>
+        <div class="project-card">
+          <h2>BAJA SAE</h2>
+          <p>
+            Does the comfort annoy you? Does the silence make you shout? For the
+            ones who are wild and free, BAJA SAE is calling you. At Team Unwired
+            we answer the call the wild way. The band of passionate free spirits
+            create the ultimate machine for taking on the wild, be it mud or
+            rocks. The challenges we face shape our passion.
+            <span class="hashtag">#StayWild</span>
+          </p>
+        </div>
+        <div class="project-card">
+          <h2>TRUE TO PURPOSE</h2>
+          <p>
+            Social initiative of Team Unwired, Lumos provides help and quality
+            time for differently abled and underprivileged children. By teaching
+            them CAD and 3D modelling using SolidWorks, we try to bring out the
+            creativity within them, helping the world see their talents and in
+            turn helping them see their world of imagination unfold into
+            reality. <span class="hashtag">#StayTrue</span>
+          </p>
+        </div>
       </div>
     </section>
   </body>
