@@ -1,0 +1,36 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  overflow: hidden;
+  height: 100%;
+}
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background: rgb(0, 0, 0);
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  gap: 30px;
+  font-weight: 500;
+}
+.logo {
+  transform: scale(0.7);
+}
